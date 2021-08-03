@@ -1,0 +1,7 @@
+domain: com.bolingcavalry
+repo: controllerTest
+resources:
+- group: webapp
+  kind: ControllerTest
+  version: v1
+version: "2"

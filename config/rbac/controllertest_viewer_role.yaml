@@ -1,0 +1,20 @@
+# permissions for end users to view controllertests.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: controllertest-viewer-role
+rules:
+- apiGroups:
+  - webapp.com.bolingcavalry
+  resources:
+  - controllertests
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - webapp.com.bolingcavalry
+  resources:
+  - controllertests/status
+  verbs:
+  - get

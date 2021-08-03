@@ -1,0 +1,24 @@
+# permissions for end users to edit controllertests.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: controllertest-editor-role
+rules:
+- apiGroups:
+  - webapp.com.bolingcavalry
+  resources:
+  - controllertests
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - webapp.com.bolingcavalry
+  resources:
+  - controllertests/status
+  verbs:
+  - get

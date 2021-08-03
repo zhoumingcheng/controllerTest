@@ -1,0 +1,7 @@
+apiVersion: webapp.com.bolingcavalry/v1
+kind: ControllerTest
+metadata:
+  name: controllertest-sample
+spec:
+  # Add fields here
+  foo: bar
